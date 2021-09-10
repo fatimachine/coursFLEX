@@ -1,0 +1,84 @@
+body{
+    background-color: lightpink;
+    color: palevioletred;
+}
+
+main{
+    width: 800px;
+    margin:0 auto;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.or {
+    background-color: gold;
+}
+
+.argent {
+    background-color: rgb(228, 227, 222);
+}
+
+.bronze {
+    background-color: rgb(241, 152, 75);
+}
+
+.lin {background-color: rgb(255, 245, 238);
+}
+
+/* FLEX  */
+
+.flex {
+  
+   background-color: lightpink;
+    margin: auto;
+      /* 1-le parent est display flex  */
+    display: flex;
+
+ /* 3- si le parent est trop petit les div s'adaptent à la largeur du parent ils vont rentrer dans le parent quoi qu'il arrive */
+
+    width: 600px;
+    height: 800px;
+    /* 4- si on a flex wrap la taille des enfants est respectée le 4 eme élément va à la ligne  */
+    /* flex-wrap: wrap; */
+
+    /* 5/ si on utilise flex-wrap:wrap reverse;le dernier élément qui ne rentre pas dans le parent passe en premier  */
+    /* flex-wrap: wrap-reverse; */
+
+    /* 6/ comportement normal ou ^par défaut:on force l'alignement et le redimensionnment des éléments */
+    /* flex-wrap: nowrap; */
+
+    /* 7/la justification des éléments avec justify-content;flex-start par défaut;flex-end à la fin;center au centre;space-between espace entre les éléments;space-around espace entre;space-evenly répartie de façon égale */
+    justify-content: space-evenly;
+
+    /* 8/ autre propriété la hauteur align-items et l'alignement vertical;stretch valeur par défaut,center au centre flex-start au début;flex-end à la fin et baseline */
+    /* align-items:baseline; */
+ 
+}
+
+.flex div {
+    /* 2-toutes les div dans la div parente qui est flex  */
+    
+    width: 100px;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.t-cap {
+    text-transform: uppercase;
+}
+
+
+

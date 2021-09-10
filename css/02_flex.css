@@ -1,0 +1,75 @@
+ /* feuille de style flex 02 */
+body{
+    background-color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    color: palevioletred;
+}
+
+main{
+    width: 800px;
+    margin:0 auto;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.or {
+    background-color: gold;
+}
+
+.argent {
+    background-color: rgb(228, 227, 222);
+}
+
+.bronze {
+    background-color: rgb(241, 152, 75);
+}
+
+.lin {
+    background-color: rgb(255, 245, 238);
+}
+
+/* FLEX  */
+.flex {
+    background-color: mistyrose;
+    display: flex;
+    /* par défaut les enfants seront flex-direction: row;dans la rangée;row-reverse on inverse l'ordre des éléments; column de haut en bas et column-reverse on inverse l'ordre des éléments dans la hauteur  */
+    flex-direction:row;
+    /* la propriété gap contrôle l'espace entre l'élément flex  */
+    /* gap= écart espacement */
+    column-gap: 40px;
+   
+}
+.flex div {
+    /* padding: 5px; */
+    text-align: justify;
+    width: 25%;
+}
+.flex-2 {
+display: flex;
+flex-direction: row;
+height: 500px;
+justify-content: space-evenly;
+align-items: baseline;
+}
+
+.flex-2 div {
+    border:1px solid mistyrose;
+}
+.h-25{
+    height: 25%;
+}
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+/* .t-cap {
+
+} */

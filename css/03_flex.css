@@ -1,0 +1,52 @@
+/* style pour la page 3 sur flex -*/
+
+body {
+    background-color:mistyrose;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+}
+
+/* .or {
+    background-color: rgb(245, 219, 75);
+}
+
+.argent {
+    background-color: rgb(228, 227, 222);
+}
+
+.vert {
+    background-color: rgb(200, 245, 75);
+
+} */
+
+/* flex  */
+
+.flex {
+/* background-color: pink; */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+/* gouttière entre les rangées  */
+/* row-gap: 20px; */
+/* gouttière entre les colonnes  */
+ /* column-gap: 2%; */
+ gap: 20px 2%; 
+ /* row gap et column gap:propriété raccourcie */
+justify-content: center; 
+}
+
+.flex div {
+    text-align: justify;
+    width:49%;    
+}

@@ -1,0 +1,85 @@
+/* style pour la page 4 sur flex -  */
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color:mistyrose;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: pink;
+    /* text-align: justify; */
+}
+h1 {
+    text-align: center;
+    color: pink;
+}
+
+.bleu-leger {
+    background-color: lightblue;
+}
+
+.jaune-leger {
+    background-color: lightyellow;
+}
+.conteneur{
+    width:100%;
+    background-color: #fff;
+}
+
+/* la classe pour créer une rangée  */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+    padding: 5px;
+}
+
+.col-2 {
+    width: 16.666666%;
+    padding: 5px;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 5px;
+}
+
+.col-4 {
+    width: 33.333333%;
+    padding: 5px;
+}
+
+.col-5 {
+    width: 41.666666%;
+    padding: 5px;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 5px;
+}
+
+.col-7 {
+    width: 58.333333%;
+    padding: 5px;
+}
+
+.col-8 {
+    width: 66.666666%;
+    padding: 5px;
+}
+
+.col-9 {
+    width: 75%;
+    padding: 5px;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 5px;    
+}
