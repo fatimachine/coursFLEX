@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: lemonchiffon;
 
 }
 .rose-leger {
@@ -17,10 +17,10 @@ body {
     background-color: lightsalmon;
 }
 main {
-    width: 800px;
+    width:1000px;
     margin: 0 auto;
 
-    background-color: linen;
+    /* background-color: linen; */
 }
 
 .row {
@@ -128,3 +128,68 @@ main {
     margin-left: 91.666666%;
 }
 
+.img-fluide {
+    width: 100%;
+}
+
+/* les règles de médias queries pour le responsive et les différents écrans  */
+
+/* pour les téléphones/smartphones */
+@media (max-width: 320px){
+
+    .column-xs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+    .marge-xs {
+        margin: 0;
+    }
+
+    body {
+        background-color: #fff;
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+}
+/* fin pour les téléphones */
+
+/* pour les petites tablettes et smartphones grands écrans */
+@media (min-width:321px) and (max-width:767px){
+    body {
+        background-color: pink;
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .column-reverse {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+}
+
+/* pour les tablettes et certains ordinateurs portables  */
+@media (min-width:768px) and (max-width:1096px){
+    body {
+        background-color: palevioletred;
+
+    }
+    main {
+        background-color: #fff;
+    }
+}
+
+/* pour les ordinateurs de bureau, les écrans plus grands que 1097px */
+@media (min-width:1097px){
+    body {
+        background-color:thistle;
+    }
+}
