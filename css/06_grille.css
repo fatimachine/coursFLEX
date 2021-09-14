@@ -1,0 +1,48 @@
+/* style pour la grille 06 */
+
+body {
+    background-color: mistyrose;
+    color: palevioletred;
+}
+
+/* main {
+    background-color: #fff;
+    margin:0 auto;
+    width: 800px;
+} */
+
+.gold {
+    background-color: goldenrod;
+}
+
+.lin {
+    background-color: linen;
+}
+
+.ble {
+    background-color: wheat;
+}
+
+section {
+    /* les sections sont display flex  */
+    display: flex;
+
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.colonne {
+    margin: 10px;
+    border: 1px dotted salmon;
+    /* nous voulons que nos colonnes se comportent de la même façon lorsqu'elles s'agrandissent ou se rapetissent */
+    /* flex-grow: 1;
+
+    flex-shrink: 1; */
+    /* La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. */
+
+    /* flex-basis:0; */
+    flex: 2 1 100px;
+
+    text-align: center;
+}
