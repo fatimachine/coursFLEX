@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'liberation_sansbold';
+    /* src: url('../fonts/LiberationSans-Bold-webfont.ttf'), */
+    src:   url('../fonts/liberationsans-bold-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sansregular';
+    /* src: url(../fonts/LiberationSans-Regular-webfont.ttf) format('ttf') , */
+    src:    url('../fonts/liberationsans-regular-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
