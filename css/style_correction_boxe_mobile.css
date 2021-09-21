@@ -1,0 +1,299 @@
+/* styles pour la boxe correction cf. Christian */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* typo en local */
+
+@font-face {
+    font-family: 'liberation_sansbold';
+    /* src: url('../fonts/LiberationSans-Bold-webfont.ttf'), */
+    src:   url('../fonts/liberationsans-bold-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-bold-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'liberation_sansregular';
+    /* src: url(../fonts/LiberationSans-Regular-webfont.ttf) format('ttf') , */
+    src:    url('../fonts/liberationsans-regular-webfont-webfont.woff2') format('woff2'),
+         url('../fonts/liberationsans-regular-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'liberation_sansregular', Arial, Helvetica, sans-serif; */
+
+body {
+    font-family: 'liberation_sansregular', Arial, Helvetica, sans-serif;
+    background-color: #9b9a9a;
+}
+
+/* les parties auto-centrée  */
+header > div, footer > div {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+main {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+/* en-tête */
+header {
+    /* l'image de fond du header se répète */
+    background-image: url("../images/background.jpg");
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+header figcaption {
+    margin-top: 20px;
+}
+
+header figcaption span {
+    color: #ea9f06;
+}
+
+header p {
+    font-size: 110%;
+}
+
+ /* la partie droite de l'en-tête */
+
+header figure+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+header nav a {
+    padding-left: 50px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* le contenu principal dans main  */
+main {
+    padding-bottom: 0%;
+}
+
+main img {
+    width: 100%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    padding-bottom: 150px;
+    background-color: #F3F3F3;
+}
+
+main article {
+    position: relative;
+    margin: 50px auto;
+    width: 35%;
+}
+
+main article figure {
+    position: relative;
+    text-align: center;
+}
+
+main article figcaption {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+main article div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main article a {
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(#212121,#9A9A9A);
+}
+
+/* les prix des articles */
+
+.ancien-prix {
+    text-decoration: line-through;
+}
+
+.nouveau-prix {
+    color: #EA9F06;
+}
+
+.rabais {
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    padding: 4px;
+    background-color: #292929;
+    border-radius: 10px;
+    color: #EA9F06;
+    font-weight: bold;
+}
+
+
+/* le pied de page */
+
+footer {
+    background-color: #373737;
+    color: #fff;
+}
+
+ /* la nav du pied de page dans le cartouche  */
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* evenly : uniforme */
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: -55px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #373737;
+}
+
+ /* les cercles dans la nav */
+footer nav div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d1d1d1;
+}
+
+footer section {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+footer figure {
+    width: 20%;
+    text-align: center;
+}
+
+footer figure img {
+    padding-bottom: 20px;
+}
+
+footer figcaption, footer p {
+    font-size: small;
+    text-align: center;
+}
+
+footer hr {
+    width: 80%;
+    margin: 20px auto;
+}
+/* la partie réseaux sociaux  */
+#reseaux {
+    justify-content: center;
+    margin: 30px;
+}
+
+#reseaux a {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+/* les styles pour media queries */
+
+@media screen and (max-width: 576px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    header > div {
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+    }
+
+    header figure {
+        width: 80%;
+        text-align: center;
+    }
+
+    header figure+div {
+        width: 80%;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    main article {
+        width: 60%;
+    }
+
+    footer figure {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+
+    header > div {
+        background-color: pink;
+    }
+}
+
+/* des styles en cas d'impression de la page  */
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    footer {
+        background-color: #eee;
+    }
+
+    main img {
+        opacity: 0.4;
+    }
+}

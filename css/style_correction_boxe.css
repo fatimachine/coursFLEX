@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* typos */
 @font-face {
     font-family: 'liberation_sansbold';
@@ -24,7 +29,7 @@ body
     background-color: #1c1c1c;
     color: black;
 }
-
+ /* en-tête  */
 header 
 {
   background-image:url(../img/background.jpg); 
@@ -34,6 +39,7 @@ header > div, main, footer>div
 {
 width: 1024px;
 margin: 0 auto;
+padding: 30px 0;
 
 
 }
@@ -43,9 +49,50 @@ header > div
     display: flex;
     justify-content: space-between;
 }
+ header figcaption 
+ {
+     margin-top: 20px;
+ }
+
+ header figcaption span 
+ {
+     color:#ea9f06;
+ }
+ header p 
+ {
+     font-size: 110%;
+ }
+ /* la partie droite de l'en-tête  */
+ header figure+div
+ {
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-end;
+ }
+
+ header nav 
+ {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+  
+ }
+
+ header nav a 
+ {
+     padding-left: 50px;
+     text-decoration:none;
+     font-weight: bold;
+     padding-left:50px;
+ }
 
 /* le contenu principal dans main  */
-
+main 
+{
+    padding-bottom: 0%;
+}
 main img
 {
     width: 100%;
@@ -55,9 +102,70 @@ main section
     display: flex;
       /* si on a flex wrap la taille des enfants est respectée le 4 eme élément va à la ligne  */
     flex-wrap: wrap;
+    justify-content:space-evenly;
+
+    padding-bottom: 150px;
     background-color: #F3F3F3;
 }
 
+main article 
+{
+    position: relative;
+    margin: 50px auto;
+    width: 35%;
+}
+
+main article figure 
+{
+    position: relative;
+    text-align: center;
+}
+
+main article figcaption 
+{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+main article div 
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+main article a 
+{
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(#212121,#9A9A9A);
+}
+
+/* les prix des articles  */
+.ancien-prix 
+{
+    text-decoration: line-through;
+}
+
+.nouveau-prix 
+{
+    color:#ea9f06;
+}
+.rabais
+{
+    position: absolute;
+    top: 25px;
+    right: -15px;
+    padding: 4px;
+    color:#ea9f06;
+    font-weight: bold;
+    background-color: #292929;
+    border-radius: 10px;
+
+}
 /* pied de page  */
 
 footer
@@ -70,7 +178,8 @@ footer nav
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     border-radius: 10px;  
     margin: auto;
     width: 50%;
@@ -78,6 +187,12 @@ footer nav
     background-color: white;
     position: relative;
     top: -25px;
+}
+
+footer nav a 
+{
+    text-decoration: none;
+    color: #1c1c1c;
 }
  /* les cercles dans la nav  */
 footer nav div
@@ -92,8 +207,41 @@ background-color: lightgrey;
 footer section 
 {
     display: flex;
+    flex-wrap: wrap;
     
     justify-content: space-between;
 }
 
+footer figure 
+{
+    width: 22%;
+    text-align: center;
+}
 
+footer figure img 
+{
+    padding-bottom: 20px;
+    
+}
+footer figcaption, footer p 
+{
+    font-size: small;
+    text-align: center;
+}
+footer hr 
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* la partie réseaux sociaux  */
+
+#reseaux {
+    justify-content: center;
+    margin: 30px;
+}
+
+#reseaux a {
+    display: inline-block;
+    margin: 0 50px;
+}
