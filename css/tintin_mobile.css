@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* les parties auto-centrée  */
+header > div, main, footer>div
+{
+width: 1024px;
+margin: 0 auto;
+padding: 30px 0;
+
+
+}
+
+header{
+    background-color: #00ced1;
+    color: #fff;
+}
+
+header h1 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    display: flex;
+    /* margin-top: 20px; */
+   
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 200px;
+    background-color: #5f9ea0;
+}
+
+.principale {
+    width: 100%;
+    height: 200px;
+    background-color: #add8e6;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color:#008080;
+}
+
+.clear {
+    clear: both;
+}
+
+
+@media screen and (max-width: 576px) {
+
+   header {
+    background-color: #00ced1;
+    }
+
+    header > div {
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+    }
+
+    header figure {
+        width: 80%;
+        text-align: center;
+    }
+
+    header figure+div {
+        width: 80%;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    main article {
+        width: 60%;
+    }
+
+    footer figure {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+
+    header > div {
+        background-color: #00ced1;
+    }
+}
+
+/* des styles en cas d'impression de la page  */
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    footer {
+        background-color: #eee;
+    }
+
+    main img {
+        opacity: 0.4;
+    }
+}
